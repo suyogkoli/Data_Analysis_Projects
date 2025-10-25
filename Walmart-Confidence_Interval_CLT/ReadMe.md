@@ -34,6 +34,7 @@ ProductCategory:	Product Category (Masked)
 Purchase:	Purchase Amount
 
 
+
 1. Import the dataset and do usual data analysis steps like checking the structure &
 characteristics of the dataset
 
