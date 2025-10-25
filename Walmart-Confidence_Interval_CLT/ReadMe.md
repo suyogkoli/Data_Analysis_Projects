@@ -14,14 +14,23 @@ The company collected the transactional data of customers who purchased products
 Dataset link: Walmart_data.csv
 
 User_ID:	User ID
+
 Product_ID:	Product ID
+
 Gender:	Sex of User
+
 Age:	Age in bins
+
 Occupation:	Occupation(Masked)
+
 City_Category:	Category of the City (A,B,C)
+
 StayInCurrentCityYears:	Number of years stay in current city
+
 Marital_Status:	Marital Status
+
 ProductCategory:	Product Category (Masked)
+
 Purchase:	Purchase Amount
 
 1. Import the dataset and do usual data analysis steps like checking the structure &
