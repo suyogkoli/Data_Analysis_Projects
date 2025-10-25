@@ -1,4 +1,6 @@
 # Data_Analysis_Projects
+Hi there! I’m Suyog Koli, passionate about turning raw data into actionable insights. Here is a brief introduction to the business case studies which I have worked on.
+
 A collection of end-to-end data analysis projects showcasing real-world problem solving using Python, Pandas, NumPy, Matplotlib, Seaborn, and SQL. Each project includes data cleaning, exploratory data analysis (EDA), insights generation, and visualization to support data-driven decision making.
 
 :mag: What’s Inside
