@@ -1,2 +1,19 @@
 # Data_Analysis_Projects
-A collection of data analysis projects using Python, Pandas, NumPy, and visualization tools. Includes data cleaning, EDA, statistical analysis, and insights generation to solve real-world business problems and showcase analytical and data storytelling skills.
+A collection of end-to-end data analysis projects showcasing real-world problem solving using Python, Pandas, NumPy, Matplotlib, Seaborn, and SQL. Each project includes data cleaning, exploratory data analysis (EDA), insights generation, and visualization to support data-driven decision making.
+
+:mag: What’s Inside
+	•	:bar_chart: Exploratory Data Analysis (EDA) on real-world datasets
+	•	:broom: Data Cleaning & Preprocessing (handling missing values, outliers, etc.)
+	•	:chart_with_upwards_trend: Statistical Analysis & Hypothesis Testing
+	•	:magic_wand: Visualization Dashboards using Matplotlib / Seaborn / Plotly
+	•	:abacus: SQL Queries for structured data insights
+	•	:brain: Mini Case Studies replicating business decision scenarios
+
+:hammer_and_wrench: Tech Stack
+	•	Languages: Python, SQL
+	•	Libraries: Pandas, NumPy, Matplotlib, Seaborn, Plotly, SciPy
+	•	Tools: Jupyter Notebook, Excel, Google Colab
+
+:dart: Goal
+
+To demonstrate analytical thinking, data storytelling, and problem-solving skills — bridging the gap between raw data and actionable business insights.
