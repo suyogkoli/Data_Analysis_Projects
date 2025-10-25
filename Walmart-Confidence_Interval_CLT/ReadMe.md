@@ -24,43 +24,93 @@ Marital_Status:	Marital Status
 ProductCategory:	Product Category (Masked)
 Purchase:	Purchase Amount
 
-What good looks like?
+1. Import the dataset and do usual data analysis steps like checking the structure &
+characteristics of the dataset
+a. The data type of all columns in the “customers” table.
+Hint: We want you to display the data type of each column present in the
+dataset.
+b. You can find the number of rows and columns given in the dataset
+Hint: You can find the shape of the dataset.
+c. Check for the missing values and find the number of missing values in each
+column
 
-Import the dataset and do usual data analysis steps like checking the structure & characteristics of the dataset.
-Detect Null values & Outliers (using boxplot, “describe” method by checking the difference between mean and median, isnull etc.)
-Do some data exploration steps like:
-Tracking the amount spent per transaction of all the 50 million female customers, and all the 50 million male customers, calculate the average, and conclude the results.
-Inference after computing the average female and male expenses.
-Use the sample average to find out an interval within which the population average will lie. Using the sample of female customers you will calculate the interval within which the average spending of 50 million male and female customers may lie.
-Use the Central limit theorem to compute the interval. Change the sample size to observe the distribution of the mean of the expenses by female and male customers.
-The interval that you calculated is called Confidence Interval. The width of the interval is mostly decided by the business: Typically 90%, 95%, or 99%. Play around with the width parameter and report the observations.
-Conclude the results and check if the confidence intervals of average male and female spends are overlapping or not overlapping. How can Walmart leverage this conclusion to make changes or improvements?
-Perform the same activity for Married vs Unmarried and Age
-For Age, you can try bins based on life stages: 0-17, 18-25, 26-35, 36-50, 51+ years.
-Give recommendations and action items to Walmart.
-Evaluation Criteria
+_____________________________________________________________________________________
+2. Detect Null values and outliers
+a. Find the outliers for every continuous variable in the dataset
+Hint: Use boxplots to find the outliers in the given dataset
+b. Remove/clip the data between the 5 percentile and 95 percentile
+Hint: You can use np.clip() for clipping the data
 
-Defining Problem Statement and Analyzing basic metrics
-Observations on shape of data, data types of all the attributes, conversion of categorical attributes to 'category' (If required), statistical summary
-Non-Graphical Analysis: Value counts and unique attributes ​
-Visual Analysis - Univariate & Bivariate
-For continuous variable(s): Distplot, countplot, histogram for univariate analysis
-For categorical variable(s): Boxplot
-For correlation: Heatmaps, Pairplots
-Missing Value & Outlier Detection
-Business Insights based on Non- Graphical and Visual Analysis
-Comments on the range of attributes
-Comments on the distribution of the variables and relationship between them
-Comments for each univariate and bivariate plot
-Answering questions
-Are women spending more money per transaction than men? Why or Why not?
-Confidence intervals and distribution of the mean of the expenses by female and male customers
-Are confidence intervals of average male and female spending overlapping? How can Walmart leverage this conclusion to make changes or improvements?
-Results when the same activity is performed for Married vs Unmarried
-Results when the same activity is performed for Age
-Final Insights (10 Points) - Illustrate the insights based on exploration and CLT
-Comments on the distribution of the variables and relationship between them
-Comments for each univariate and bivariate plots
-Comments on different variables when generalizing it for Population
-Recommendations
-Actionable items for business. No technical jargon. No complications. Simple action items that everyone can understand
+_____________________________________________________________________________________
+
+3. Data Exploration
+a. What products are different age groups buying?
+Hint: You can use histplot to find the relationship between products and age
+groups
+b. Is there a relationship between age, marital status, and the amount spent?
+
+Hint: You can do multivariate analysis to find the relationship between age,
+marital status, and the amount spent
+c. Are there preferred product categories for different genders?
+Hint: You can apply different hist plots for different genders
+
+_____________________________________________________________________________________
+4. How does gender affect the amount spent?
+Hint: Use the central limit theorem and bootstrapping to compute the 95% confidence
+intervals for the average amount spent per gender. First, compute the confidence
+interval for whatever data is available, and then repeat the same with smaller sample
+sizes - 300, 3000, and 30000.
+a. From the above calculated CLT answer the following questions.
+i. Is the confidence interval computed using the entire dataset wider for
+one of the genders? Why is this the case?
+ii. How is the width of the confidence interval affected by the sample size?
+iii. Do the confidence intervals for different sample sizes overlap?
+iv. How does the sample size affect the shape of the distributions of the
+means?
+
+_____________________________________________________________________________________
+5. How does Marital_Status affect the amount spent?
+Hint: Use the central limit theorem and bootstrapping to compute the 95% confidence
+intervals for the average amount spent per Marital_Status. First, compute the
+confidence interval for whatever data is available, and then repeat the same with
+smaller sample sizes - 300, 3000, and 30000.
+a. From the above calculated CLT answer the following questions.
+i. Is the confidence interval computed using the entire dataset wider for
+one of the genders? Why is this the case?
+ii. How is the width of the confidence interval affected by the sample size?
+iii. Do the confidence intervals for different sample sizes overlap?
+iv. How does the sample size affect the shape of the distributions of the
+means?
+
+_____________________________________________________________________________________
+6. How does Age affect the amount spent?
+
+Hint: Use the central limit theorem and bootstrapping to compute the 95% confidence
+intervals for the average amount spent per Marital_Status. First, compute the
+confidence interval for whatever data is available, and then repeat the same with
+smaller sample sizes - 300, 3000, and 30000.
+a. From the above calculated CLT answer the following questions.
+i. Is the confidence interval computed using the entire dataset wider for
+one of the genders? Why is this the case?
+ii. How is the width of the confidence interval affected by the sample size?
+iii. Do the confidence intervals for different sample sizes overlap?
+iv. How does the sample size affect the shape of the distributions of the
+means?
+
+_____________________________________________________________________________________
+7. Create a report
+a. Report whether the confidence intervals for the average amount spent by males
+and females (computed using all the data) overlap. How can Walmart leverage
+this conclusion to make changes or improvements?
+Hint: Check whether the average spending of males and females overlap or not
+using the CLT that you calculated
+b. Report whether the confidence intervals for the average amount spent by
+married and unmarried (computed using all the data) overlap. How can Walmart
+leverage this conclusion to make changes or improvements?
+Hint: Check whether the average spending of married and unmarried overlap or
+not using the CLT that you calculated.
+c. Report whether the confidence intervals for the average amount spent by
+different age groups (computed using all the data) overlap. How can Walmart
+leverage this conclusion to make changes or improvements?
+Hint: Check whether the average spending of different age groups overlaps or
+not using the CLT that you calculated.
